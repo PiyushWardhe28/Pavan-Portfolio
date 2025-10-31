@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Piyush Wardhe | HallTicket</title>
+</head>
+
+<head>
+    <title>Pavan Nilur | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <style>
+        /*======================================
+//--//-->   ABOUT
+======================================*/
+
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+        .about-mf .about-img img {
+            margin-left: 10px;
+        }
+
+
+        .skill-mf .progress {
+            /* background-color: #cde1f8; */
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+        .skill-mf .progress .progress-bar {
+            height: .7rem;
+            background-color: #ffbd39;
+        }
+
+
+        /* Animation styles */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+        #typing-animation:before {
+            content: "";
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+
+        /* project image zoom effect */
+
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+        .zoom-effect:hover {
+            transform: scale(1.1);
+        }
+
+        .centered-heading-container {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 20vh;
+            text-align: left;
+        }
+
+        .centered-heading {
+            font-size: 2em;
+            color: #ffbd39;
+            /* Adjust the color as needed */
+            margin-left: 20px;
+            /* Adjust this value to move the heading away from the left edge */
+        }
+
+        .features {
+            padding: 0px 12%;
+            font-size: 18px;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+
+        .text-col {
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+
+        .img-col {
+            flex-basis: 50%;
+            margin-bottom: 20px;
+        }
+
+        .img-col img {
+            display: block;
+            width: 70%;
+            margin: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .img-col img:hover {
+            transform: scale(1.1);
+            /* Zooms in the image */
+        }
+
+        .features h2 {
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .center-btn {
+            text-align: center;
+            margin-top: 50px;
+            /* Adjust margin as needed */
+            background-image: url('images/bg_1.jpg');
+            background-size: cover;
+            background-position: center;
+            /* padding: 20px;
+            border-radius: 120px;
+            Adjust border-radius to control the curve */
+        }
+
+        /* Style for the button */
+
+
+        /* new */
+        .github-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FFA500;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 60px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+            /* Smooth transition for transform */
+        }
+
+        .github-btn:hover {
+            transform: scale(1.1);
+            /* Zoom in effect on hover */
+        }
+
+        .above-text {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            /* Adjust margin as needed */
+        }
+
+        /* Style for the colored word "Github" */
+        .github-color {
+            color: #ffbd39;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            /* Ensure the navbar appears above other content */
+            transition: top 0.3s ease-in-out;
+            /* Smooth transition for hiding/showing the navbar */
+        }
+
+        .navbar.scrolled {
+            background-color: rgba(0, 0, 0, 0.8);
+            /* Adjust the background color as needed */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            /* Adjust the color of the links as needed */
+            transition: color 0.3s ease-in-out;
+            /* Smooth transition for link color */
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #ffbd39 !important;
+            /* Adjust the color of the links on hover as needed */
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pavan Nilur</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a>
+                    </li>
+                    <li class="nav-item"><a href="index.html#project-section" class="nav-link"><span>Projects</span></a>
+                    </li>
+                    <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            window.addEventListener('scroll', function () {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 0) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="centered-heading-container">
+        <h1 class="centered-heading">Exam Hall Management System &amp; Exam Hall Ticket Generator Integrated with
+            QR Code
+        </h1>
+    </div>
+
+    <div class="row">
+        <div class="img-col">
+            <img src="images/hallTicket.png">
+        </div>
+        <div class="text-col">
+            <h2 style="font-size: 60px; font-weight: 600;">What is it?</h2>
+            <p style="font-size: 18px;">The Exam Management System streamlines exam procedures for authorized personnel
+                and students. It offers a user-friendly login for exam controllers, simplifies tasks such as adding
+                teachers and assigning classrooms, and optimizes exam venue organization. The system generates
+                personalized Exam Hall Tickets with QR codes for quick verification, includes detailed exam information,
+                and provides easy printing and downloading options for students, ensuring efficiency and convenience in
+                exam management.</p>
+        </div>
+    </div>
+
+
+    <div class="features">
+        <!-- 1st -->
+        <div class="row">
+            <div class="text-col">
+                <h2>Login page and Dashboard</h2>
+                <ul>
+                    <li>The login page for the Controller of Examiners serves as the gateway for authorized personnel
+                        managing examinations.</li>
+                    <li>Key functionalities of this login page include:
+                        <ul>
+                            <li>Adding teachers, students, and classrooms to the system.</li>
+                            <li>Assigning classrooms to teachers and students.</li>
+                            <li>Organizing exam venues.</li>
+                        </ul>
+                    </li>
+                    <li>The Controller of Examiners can designate teachers to specific venues, streamlining exam
+                        invigilation and supervision.</li>
+                </ul>
+            </div>
+            <div class="img-col">
+                <img src="images/1.png">
+            </div>
+        </div>
+        <!-- 2nd -->
+        <div class="row">
+            <div class="img-col">
+                <img src="images/2.png">
+            </div>
+            <div class="text-col">
+                <h2>Form Filling</h2>
+                <ul>
+                    <li>This form generates a personalized Exam Hall Ticket for students.</li>
+                    <li>Required input parameters include:
+                        <ul>
+                            <li>The student's full name.</li>
+                            <li>Father's and mother's names.</li>
+                            <li>Address.</li>
+                            <li>Email.</li>
+                            <li>Mobile number.</li>
+                            <li>Date of birth (DOB).</li>
+                            <li>Fees paid.</li>
+                            <li>Category.</li>
+                            <li>Gender.</li>
+                            <li>Course.</li>
+                            <li>Passport-size photograph.</li>
+                            <li>Signature.</li>
+                        </ul>
+                    </li>
+                    <li>After entering the details and checking the declaration box, clicking submit will generate the
+                        hall ticket with a personalized QR code for verification.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 3rd -->
+        <div class="row">
+            <div class="text-col">
+                <h2>Generated Personalized Exam Hall Ticket</h2>
+                <ul>
+                    <li>The personalized Exam Hall Ticket for students encompasses all details provided during form
+                        submission, including the student's passport-size photograph and signature.</li>
+                    <li>Furthermore, it features an integrated personalized QR code. Scanning this QR code reveals all
+                        the student's details, streamlining verification processes at exam centers and saving time for
+                        exam controllers and invigilators.</li>
+                    <li>The QR code's integration aims to expedite processes at exam centers by eliminating the need for
+                        manual verification.</li>
+                    <li>The Exam Hall Ticket also includes subjects, exam timings, dates, and venue details.</li>
+                    <li>Finally, students can easily print their hall tickets by clicking the print button, ensuring
+                        convenience and accessibility.</li>
+                </ul>
+            </div>
+            <div class="img-col">
+                <img src="images/3.png">
+            </div>
+        </div>
+        <!-- 4th -->
+        <div class="row">
+            <div class="img-col">
+                <img src="images/4.png">
+            </div>
+            <div class="text-col">
+                <h2>Print Exam Hall Ticket</h2>
+                <ul>
+                    <li>You can easily print your generated Hall Ticket with just a few clicks.</li>
+                    <li>The option to download your Hall Ticket is available for your convenience.</li>
+                    <li>Printing your Hall Ticket is simple and straightforward, ensuring you have it ready for your
+                        exam.</li>
+                    <li>Downloading your Hall Ticket allows you to keep a digital copy for reference whenever needed.
+                    </li>
+                    <li>With the click of a button, you can have your Hall Ticket printed and ready to go.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-btn">
+        <div class="above-text">
+            You can find this project on <span class="github-color">Github</span>
+        </div>
+        <a href="https://github.com/PiyushWardhe28/Exam-Hall-Ticket-Generator-with-Integrated-QR-Code"
+            class="github-btn">G I T H U B</a>
+    </div>
+
+</body>
+
+</html>
